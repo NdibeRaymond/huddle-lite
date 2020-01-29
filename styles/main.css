@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.wrapper {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper__cover-img {
+  position: absolute;
+  width: 90%;
+  height: 100vh;
+  top:0;
+  z-index: -1;
+}
+
+
+
+.logo {
+  width: 40%;
+  max-width: 180px;
+  min-width: 120px;
+}
+
+.h {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+ border: none;
+ border-radius: 50px;
+ cursor: pointer;
+}
+
+.btn:hover,.btn:focus {
+  box-shadow: 5px 4px 30px 0px black;
+}
+
+.btn--md {
+ padding: 1rem 3rem;
+}
+
+.btn--white {
+color: hsl(257, 40%, 49%);
+background-color: white;
+}
+
+
+
+header {
+  padding: 0 3.5rem;
+  height: 9.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  padding: 0 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero__img {
+ width: 54%;
+ height: 64vh;
+}
+
+.hero__div {
+  width: 42%;
+}
+
+.hero__h1 {
+  font-size: 2.4rem;
+}
+
+.footer {
+  padding: 0.8rem 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  order:2;
+}
+
+.social__i {
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 100px;
+  padding:0.5rem;
+  margin: 0 1rem;
+  height: 16px;
+  width: 16px;
+  color: white;
+}
+
+.attribution {
+  margin-left: 3rem;
+  order: 1;
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.attribution__a {
+  text-decoration: none;
+  color: white;
+}
+
+.attribution__a:hover {
+  color: #cccccc;
+}
+
+.attribution__icon--red{
+  color: red;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+  .btn--md {
+   padding: 0.8rem 5rem;
+  }
+
+  header {
+    padding: 0 2.5rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .wrapper__cover-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top:0;
+    z-index: -1;
+  }
+
+  .hero {
+    padding: 0 2.5rem;
+    /* padding-top: 2rem; */
+    text-align: center;
+  }
+
+  .hero__img {
+   padding: 2rem 0;
+   width: 100%;
+   height: auto;
+  }
+
+  .hero__div {
+    width: 100%;
+  }
+
+  .hero__h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 0 2.5rem;
+
+    padding-top: 3rem;
+  }
+
+  .social {
+    width: 100%;
+    order:1;
+  }
+
+  .attribution {
+    width: 100%;
+    order: 2;
+    margin-left: 0;
+  }
+
+}

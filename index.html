@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img class="logo" src="./images/logo.svg" alt="huddle logo">
+    </header>
+    <main>
+      <section class="hero">
+        <img class="hero__img" src="./images/illustration-mockups.svg" alt="mobile and desktop screens">
+
+        <div class="hero__div">
+          <h1 class="h hero__h1">Build The Community Your Fans Will Love</h2>
+
+          <p class="hero__p">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+          Create connections with your users as you engage in genuine discussion.</p>
+
+          <button class="btn btn--md btn--white" type="button" name="button">Register</button>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="social">
+        <i class="social__i fa fa-facebook" aria-label="facebook page"></i>
+        <i class="social__i fa fa-twitter" aria-label="twitter handle"></i>
+        <i class="social__i fa fa-instagram" aria-label="instagram handle"></i>
+      </section>
+      <p class="attribution">
+        Coded &nbsp; with &nbsp; <i class="attribution__icon--red fa fa-heart" aria-label="love"></i> &nbsp; by &nbsp; <a class="attribution__a" href="https://raymond-ndibe.netlify.com">Raymond Ndibe</a>
+      </p>
+    </footer>
+    <picture>
+      <source class="wrapper__cover-img" media="(min-width: 768px)" srcset="./images/bg-desktop.svg" alt="">
+      <source class="wrapper__cover-img" media="(min-width: 378px)" srcset="./images/bg-mobile.svg" alt="">
+      <img class="wrapper__cover-img" src="./images/bg-mobile.svg" alt="">
+    </picture>
+  </div>
+</body>
+</html>
